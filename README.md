@@ -10,12 +10,10 @@ This is a college project and not any actual e-commerce website!
 
 ## Table of Contents
 1. [How to run Project](#how-to-run-the-project)
-2. [Running Tests](#running-tests)
-3. [Active Bugs](#active-bugs)
-4. [Advanced Database Operation](#advanced-database-operations)
+2. [Advanced Database Operation](#advanced-database-operations)
 
 
-<br/><hr/><br/>
+<hr/><br/>
 
 
 
@@ -23,7 +21,7 @@ This is a college project and not any actual e-commerce website!
 
 ### 1. Get the project
 
-    **Follow any one of the two methods listed below**
+**Follow any one of the two methods listed below**
     
 
   * Download the **.zip** of **master** branch, and extract it into a folder in your desktop, *__or__*,
@@ -55,44 +53,19 @@ Run the following command in the terminal with __project__ folder as the working
 
 <br/><hr/><br/>
 
-## Environment Variables required
-1. `ALLOWED_HOSTS` : Space separated domain names in **settings.py**.<br> Ex: `localhost 127.0.0.1 .onrender.com`
-2. `SECRET_KEY` : Django app secret key in **settings.py**.
-3. `DEBUG` : App debug mode in **settings.py**. set `true` for debug mode (optional).
-4. `PAYPAL-CLIENTID` : for paypal integration.
-5. `ADMIN_EMAIL` : admin email for sending mails to customer
-6. `DATABASE_URL` : db url for externally connected databases (optional).
-
-<br/><hr/><br/>
-
-
-
-## Running Tests
-
-To run tests, run the following command into the terminal:
-
-```
-  coverage run manage.py test app -v 2
-  coverage html
-```
-
-To see the output, go to `htmlcov` folder and run the `index.html` file. 
-
-Click any links in that page to see the test efficiency.
-
-<br/><hr/><br/>
-
-## Active Bugs
-
-Refer to [BUGS.md](/BUGS.md) for better view on Active Bugs
-
-
-<br/><hr/><br/>
-
 
 ## Advanced Database Operations
 
 _**Note: Stay away if you don't know what is happening!**_
+
+<br/>
+
+### Current admin details
+route: `/admin`
+username: `admin`
+password: `admin`
+
+<br/>
 
 ### Changed any field in Database?
 
