@@ -202,7 +202,7 @@ def ram(request, data=None):
     if data == None:
         rams = Product.objects.filter(category='RAM')
     elif str(data).lower() == 'corsair' or str(data).lower() == 'crucial':
-        rams = Product.objects.filter(category='RAM').filter(brand=data)
+        rams = Product.objects.filter(category='RAM').filter(brand__iexact=data)
 
     elif str(data) == 'below2000':
         rams = Product.objects.filter(
@@ -223,7 +223,7 @@ def solidstatedrive(request, data=None):
         solidstatedrives = Product.objects.filter(category='SSD')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'western digital':
         solidstatedrives = Product.objects.filter(
-            category='SSD').filter(brand=data)
+            category='SSD').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         solidstatedrives = Product.objects.filter(
@@ -243,7 +243,7 @@ def cabinet(request, data=None):
     if data == None:
         cabinets = Product.objects.filter(category='CB')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        cabinets = Product.objects.filter(category='CB').filter(brand=data)
+        cabinets = Product.objects.filter(category='CB').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         cabinets = Product.objects.filter(
@@ -263,7 +263,7 @@ def pendrive(request, data=None):
     if data == None:
         pendrives = Product.objects.filter(category='PND')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        pendrives = Product.objects.filter(category='PND').filter(brand=data)
+        pendrives = Product.objects.filter(category='PND').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         pendrives = Product.objects.filter(
@@ -283,7 +283,7 @@ def ups(request, data=None):
     if data == None:
         upss = Product.objects.filter(category='UPS')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        upss = Product.objects.filter(category='UPS').filter(brand=data)
+        upss = Product.objects.filter(category='UPS').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         upss = Product.objects.filter(
@@ -303,7 +303,7 @@ def keyboard(request, data=None):
     if data == None:
         keyboards = Product.objects.filter(category='KB')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        keyboards = Product.objects.filter(category='KB').filter(brand=data)
+        keyboards = Product.objects.filter(category='KB').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         keyboards = Product.objects.filter(
@@ -323,7 +323,7 @@ def hdd(request, data=None):
     if data == None:
         hdds = Product.objects.filter(category='HDD')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'western digital':
-        hdds = Product.objects.filter(category='HDD').filter(brand=data)
+        hdds = Product.objects.filter(category='HDD').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         hdds = Product.objects.filter(
@@ -343,7 +343,7 @@ def psu(request, data=None):
     if data == None:
         psus = Product.objects.filter(category='PSU')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        psus = Product.objects.filter(category='PSU').filter(brand=data)
+        psus = Product.objects.filter(category='PSU').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         psus = Product.objects.filter(
@@ -363,7 +363,7 @@ def motherboard(request, data=None):
     if data == None:
         motherboards = Product.objects.filter(category='MB')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        motherboards = Product.objects.filter(category='MB').filter(brand=data)
+        motherboards = Product.objects.filter(category='MB').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         motherboards = Product.objects.filter(
@@ -383,7 +383,7 @@ def mouse(request, data=None):
     if data == None:
         mouses = Product.objects.filter(category='MOU')
     elif str(data).lower() == 'samsung' or str(data).lower() == 'wd':
-        mouses = Product.objects.filter(category='MOU').filter(brand=data)
+        mouses = Product.objects.filter(category='MOU').filter(brand__iexact=data)
 
     elif str(data) == 'below4000':
         mouses = Product.objects.filter(
